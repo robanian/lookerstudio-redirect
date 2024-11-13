@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5; url=https://lookerstudio.google.com/embed/reporting/55e11b00-6ebc-4dd6-90d2-218888723733/page/1jTPE?params=%7B%22ds0.tokenparam%22%3A%22{{ __UNSAFE_session_id__ }}%22%7D">
+    <title>데이터 로딩 중...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .loading {
+            text-align: center;
+        }
+        .spinner {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="spinner"></div>
+        <p>데이터를 불러오는 중입니다. 잠시만 기다려 주세요...</p>
+    </div>
+</body>
+</html>
